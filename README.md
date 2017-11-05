@@ -1,4 +1,4 @@
-# Get Bay Ferry Data
+# Get SF Ferry Data
 Lambda function to automatically get, massage and save to DynamoDB all ferry times for San Francisco Bay Ferry. This function currently automates keeping [The Bay Ferry](https://www.amazon.com/Brian-Kilrain-The-Bay-Ferry/dp/B071KBG28X) Alexa skill updated with the latest schedules. It is published here according to the [AWS Serverless Application Model (SAM)](https://github.com/awslabs/serverless-application-model) spec.
 
 ## How To Use
