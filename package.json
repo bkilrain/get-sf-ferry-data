@@ -1,0 +1,24 @@
+{
+  "name": "get-sf-ferry-data",
+  "version": "1.0.0",
+  "description": "Lambda function to automatically get, massage and save to DynamoDB all ferry times for San Francisco Bay Ferry.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bkilrain/get-sf-ferry-data.git"
+  },
+  "author": "Brian Kilrain",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bkilrain/get-sf-ferry-data/issues"
+  },
+  "homepage": "https://github.com/bkilrain/get-sf-ferry-data#readme",
+  "dependencies": {
+    "aws-sdk": "^2.145.0",
+    "axios": "^0.17.0",
+    "moment-timezone": "^0.5.14"
+  }
+}
