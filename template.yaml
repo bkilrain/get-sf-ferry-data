@@ -1,0 +1,20 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: Lambda function to automatically get, massage and save to DynamoDB all
+  ferry times for San Francisco Bay Ferry.
+Timeout: 10
+FunctionName: getSFFerryData
+Runtime: nodejs6.10
+Resources:
+  getFerryData:
+    Properties:
+      CodeUri: s3://get-sf-ferry-data/deploy.zip
+      Environment:
+        Variables:
+          API_TOKEN:
+            ApiToken: null
+          TABLE_NAME:
+            tableName: null
+      Handler: index.handler
+      Policies: AmazonDynamoDBFullAccess
+    Type: AWS::Serverless::Function
+Transform: AWS::Serverless-2016-10-31
